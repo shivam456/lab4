@@ -14,7 +14,7 @@ import {
 } from '@material-ui/core';
 
 const MedicationList = (meds) => {
-  const [selectedCustomerIds] = useState([]);
+  const [selectedMedIds] = useState([]);
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(0);
   const medications = Object.values(meds.meds);
@@ -42,7 +42,7 @@ const MedicationList = (meds) => {
                 <TableRow
                   hover
                   key={med.id}
-                  selected={selectedCustomerIds.indexOf(med.id) !== -1}
+                  selected={selectedMedIds.indexOf(med.id) !== -1}
                 >
                   <TableCell>
                     <Box
@@ -75,9 +75,5 @@ const MedicationList = (meds) => {
     </Card>
   );
 };
-
-// CustomerListResults.propTypes = {
-//   customers: PropTypes.array.isRequired
-// };
 
 export default MedicationList;
