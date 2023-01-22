@@ -13,7 +13,7 @@ import {
   Tooltip
 } from '@material-ui/core';
 
-const LatestOrders = (props) => {
+const VitalsTable = (props) => {
   const data = Object.values(props.data);
   console.log(data);
   return (
@@ -80,4 +80,4 @@ const LatestOrders = (props) => {
   );
 };
 
-export default LatestOrders;
+export default VitalsTable;
