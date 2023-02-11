@@ -60,6 +60,7 @@ export default class Dashboard extends React.Component {
         'http://loinc.org|59408-5', // SPo2
         'http://loinc.org|8867-4', // Heart rate
         'http://loinc.org|9279-1', //  Respiratory Rate
+        'http://loinc.org|29463-7',
       ].join(','));
       this._loader = client.request('Observation?' + query, {
         pageLimit: 0, // get all pages
@@ -71,6 +72,7 @@ export default class Dashboard extends React.Component {
           const currentHeartrate = byCodes('8867-4');
           const currentBloodpressure = byCodes('55284-4');
           const currentRR = byCodes('9279-1');
+          const currentWeight = byCodes('29463-7');
           const data = currentHeartrate;
           
       /* END OF WHERE YOU NEED TO EDIT YOUR CODE */ 
