@@ -41,12 +41,21 @@ export default class Medication extends React.Component {
     componentDidMount() {
       const client = this.context.client;
       const queryMed = new URLSearchParams();
+      var meds = [null];
       queryMed.set('patient', client.patient.id);
       console.log(client);
 
 /* START TO EDIT YOUR CODE HERE: Task 2 use the SMART API 
 to get the medications requests for the patient. It can be stopped or ongoing */ 
-
+meds = client.request('MedicationRequest?' + queryMed, {
+  pageLimit: 0, // get all pagesMed
+  flat: true // return flat array of Observation resources
+}).then(medsss => {
+  console.log(medsss);
+  this.setState({
+    meds: medsss,loading: false, error: null
+  });
+})
 
  /* END OF WHERE YOU NEED TO EDIT YOUR CODE */ 
 
