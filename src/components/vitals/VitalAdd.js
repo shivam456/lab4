@@ -14,7 +14,6 @@ export default class VitalAdd extends React.Component {
     static contextType = FhirClientContext;
 
     constructor(props) {
-
       super(props);
       this.state = {
         loading: true,
@@ -39,7 +38,6 @@ export default class VitalAdd extends React.Component {
 
 /* START TO EDIT YOUR CODE HERE: Task 3 update your code here. You will have to use the SMART API to add the ability to add the  
  Respiratory rate (rr) observation with the user input */ 
-
  const today = new Date();
 
  var data = {
@@ -84,7 +82,6 @@ export default class VitalAdd extends React.Component {
    }
  }
  this.context.client.create(data);
-        
 
  /* END OF WHERE YOU NEED TO EDIT YOUR CODE */ 
  

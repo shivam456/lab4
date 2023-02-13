@@ -45,9 +45,9 @@ export default class Launcher extends React.Component {
 
 // componentDidMount() {
 //   SMART.authorize({
-//     clientId: '0e0fb8fd-dfe2-4f45-9b10-f33533297702',
+//     clientId: 'my-client-id',
 //     scope: 'launch launch/patient patient/read offline_access',
-//     redirectUri: 'https://newapp1234.herokuapp.com/app/dashboard',
+//     redirectUri: './app/dashboard',
 //     iss: 'https://launch.smarthealthit.org/v/r4/sim/eyJoIjoiMSIsImIiOiI2N2NiZjA5MC00ZGRiLTQ3OTktOTlmZi1hMjhhYmUyNzQwYjEiLCJqIjoiMSJ9/fhir',
 
 //     completeInTarget: false
