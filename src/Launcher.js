@@ -23,8 +23,8 @@ export default class Launcher extends React.Component {
       clientId: '0e0fb8fd-dfe2-4f45-9b10-f33533297702',
       scope: 'launch launch/patient patient/read offline_access patient/Patient.read patient/Observation.read patient/Observation.write patient/MedicationRequest.read ',
       redirectUri: 'https://newapp1234.herokuapp.com/app/dashboard',
-      iss: 'https://fhir-ehr-code.cerner.com/r4/',
-      // iss: 'https://r4.smarthealthit.org',
+      //iss: 'https://fhir-ehr-code.cerner.com/r4/',
+      iss: 'https://r4.smarthealthit.org',
 
       completeInTarget: false
     });
